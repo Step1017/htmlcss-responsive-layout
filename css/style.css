@@ -1,0 +1,179 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+:root {
+    --primary-color:#0084fd;
+    --secondary-color: #9792e4;
+    --primary-color-light:#b5ddff;
+    --footer-color: #333;
+    --main-space:2rem
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 var(main-space);
+}
+
+.box-debug {
+    background-color: var(--primary-color-light);
+    padding: 10px;
+}
+
+/* HEADER */
+header {
+    background-color:var(--primary-color);
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* MAIN */
+#intro {
+    padding: var(--main-space) 0;
+}
+
+#intro .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.75rem;
+}
+
+#intro .cards .card {
+    width: calc((100% / 3) - 1.5rem);
+    margin-bottom: var(--main-space);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+
+    margin-bottom: var(--main-space);
+    background-color: var(--primary-color-light);
+}
+
+#intro .cards .card:first-child {
+    width: calc(((100% / 3) *2) - 1.5rem);
+    display: flex;
+    justify-content: space-between;
+}
+
+#intro .cards .card:first-child > * {
+    width: 50%;
+}
+
+/* Planning */
+#planning {
+    padding: var(--main-space) 0;
+    background-color: var(--secondary-color);
+}
+
+#planning .my-row {
+    display: flex;
+    align-items: flex-end;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+#planning .my-row .my-col {
+    width: 50%;
+}
+
+/* Testimonials */
+#testimonials {
+    padding: var(--main-space) 0;
+}
+
+#testimonials .container {
+    margin-bottom: var(--main-space);
+}
+
+#testimonials .card {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+}
+
+/* Benefits */
+#benefits {
+    padding: var(--main-space) 0;
+    background-color: var(--secondary-color);
+}
+
+#benefits .my-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+#benefits .my-row .my-col {
+    width: 50%;
+}
+
+#about {
+    padding: var(--main-space) 0;
+}
+
+#about .my-row {
+    display: flex;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+#about .my-row .my-col {
+    width: 50%;
+}
+
+#start {
+    padding: var(--main-space);
+    background-color: var(--secondary-color);
+}
+
+#start .my-row {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+#start .box-debug {
+    display: flex;
+    justify-content: center;
+}
+
+#foot {
+    padding: var(--main-space);
+    background-color: var(--footer-color);
+}
+
+#foot .my-row {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+#foot .box-debug {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* FOOTER */
+
+/* MEDIA QUERY */
+/* MOBILE-->TABLET */
+@media screen and (min-width:480px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+/* TABLET-->DESKTOP */
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 1000px;
+    }
+}
