@@ -25,16 +25,48 @@
     padding: 10px;
 }
 
+.box {
+    padding: 10px 0;
+}
+
 /* HEADER */
 header {
     background-color:var(--primary-color);
 }
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
 
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:last-child {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 7px;
+}
+
+nav ul li .my-btn {
+    color: black;
+    text-align: center;
+}
+
+
 /* MAIN */
 #intro {
     padding: var(--main-space) 0;
